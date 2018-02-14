@@ -1,0 +1,11 @@
+hash: 2ff31dc56fceeb25b6ccee682b730a4d1feaa31edfaea4a402ab1619f27e0040
+updated: 2018-02-13T21:33:48.585109073+01:00
+imports:
+- name: github.com/kelseyhightower/envconfig
+  version: 462fda1f11d8cad3660e52737b8beefd27acfb3f
+- name: golang.org/x/crypto
+  version: 9de5f2eaf759b4c4550b3db39fed2e9e5f86f45c
+  subpackages:
+  - pbkdf2
+  - scrypt
+testImports: []

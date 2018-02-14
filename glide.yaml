@@ -1,0 +1,6 @@
+package: github.com/berrak/gopwdgen
+import:
+- package: github.com/kelseyhightower/envconfig
+- package: golang.org/x/crypto
+  subpackages:
+  - scrypt
