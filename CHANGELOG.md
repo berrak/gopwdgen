@@ -1,3 +1,9 @@
+## Release 0.6.0 (2018-02-16)
+
+BUGFIXES:
+
+* Correct $GOBIN setting
+
 ## Release 0.5.0 (2018-02-16)
 
 IMPROVEMENTS:

@@ -1,9 +1,9 @@
 # gopwdgen
 
-[![Build Status](https://travis-ci.org/berrak/gopwdgen.svg?branch=master)](https://travis-ci.org/berrak/gopwdgen)
+[![Build Status](https://travis-ci.org/berrak/gopwdgen.svg?branch=master)
 [![license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![release](https://img.shields.io/badge/release-v0.5.0-blue.svg)]()
-[![homebrew](https://img.shields.io/badge/homebrew-v0.5.0-orange.svg)]()
+[![release](https://img.shields.io/badge/release-v0.6.0-blue.svg)]()
+[![homebrew](https://img.shields.io/badge/homebrew-v0.6.0-orange.svg)]()
 
 ## Generate random passwords or hashes for automatic script retrieval
 
@@ -32,7 +32,7 @@ First, install [Go](https://golang.org), and then update `GOPATH`, `GOBIN` and `
 
 ```bash
 export GOPATH=$HOME/go
-export GOBIN=$HOME/$GOPATH/bin
+export GOBIN=$GOPATH/bin
 export PATH=$GOBIN:/usr/local/go/bin:$PATH
 ```
 Next download the project and build the binary file.
