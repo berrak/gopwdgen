@@ -1,3 +1,10 @@
+## Release 0.3.0 (2018-02-16)
+
+BUGFIXES:
+
+* Build test reduced to only go 1.9+ since 
+  Travis CI cannot find "golang.org/x/sys/unix"
+
 ## Release 0.2.0 (2018-02-16)
 
 IMPROVEMENTS:

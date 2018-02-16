@@ -1,9 +1,9 @@
 # gopwdgen
 
 [![Build Status](https://travis-ci.org/berrak/gopwdgen.svg?branch=master)](https://travis-ci.org/berrak/gopwdgen)
-[![license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)(./LICENSE)
-[![release](https://img.shields.io/badge/release-v0.2.0-blue.svg)]()
-[![homebrew](https://img.shields.io/badge/homebrew-v0.2.0-orange.svg)]()
+[![license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![release](https://img.shields.io/badge/release-v0.3.0-blue.svg)]()
+[![homebrew](https://img.shields.io/badge/homebrew-v0.3.0-orange.svg)]()
 
 ## Generate random passwords or hashes for automatic script retrieval
 
