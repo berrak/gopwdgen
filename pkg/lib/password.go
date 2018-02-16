@@ -1,3 +1,4 @@
+// Package lib contains only internal functions to cmd/gopwdgen
 /*
 Copyright 2018 The gopwdgen Authors.
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,7 +13,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
-
 package lib
 
 import (
@@ -33,7 +33,7 @@ const (
 	Digits = "0123456789"
 
 	// Symbols is the list of 'safe' symbols.
-	// Symbols = "~!@#$%^&*()_+`-={}|[]\\:\"<>?,./"
+	// Symbols (original) = "~!@#$%^&*()_+`-={}|[]\\:\"<>?,./"
 	Symbols = "@#()-~'_`."
 )
 
@@ -165,7 +165,7 @@ func randomInsert(s, val string) (string, error) {
 		return "", err
 	}
 	i := n.Int64()
-	return s[0:i] + val + s[i:len(s)], nil
+	return s[0:i] + val + s[i:], nil
 }
 
 // randomElement extracts a random element from the given string.

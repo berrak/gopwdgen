@@ -1,3 +1,9 @@
+## Release 0.5.0 (2018-02-16)
+
+IMPROVEMENTS:
+
+* Add more build tests to Travis CI
+
 ## Release 0.4.0 (2018-02-16)
 
 BUGFIXES:

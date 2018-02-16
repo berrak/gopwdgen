@@ -1,3 +1,4 @@
+// Package lib contains only internal functions to cmd/gopwdgen
 /*
 Copyright 2018 The gopwdgen Authors.
 Licensed under the Apache License, Version 2.0 (the "License");

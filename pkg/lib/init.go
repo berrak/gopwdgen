@@ -1,3 +1,4 @@
+// Package lib contains only internal functions to cmd/gopwdgen
 /*
 Copyright 2018 The gopwdgen Authors.
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,7 +13,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
-
 package lib
 
 import (
@@ -32,7 +32,6 @@ type ParsedStruct struct {
 /////////////////////////
 const (
 	successExitCode = 0
-	errorExitCode   = 1
 	oracleEnvSid    = "ORACLE_SID"
 	gopwdgenEnvSalt = "GOPWDGEN_SALT"
 	gopwdgenEnvUp   = "GOPWDGEN_UP"
@@ -81,7 +80,7 @@ func Init(arg []string, p ParsedStruct, gopwdgenVersion string) ParsedStruct {
 		if err != nil {
 			log.Fatalf("Error in fileExist(%s)", parsed.FirstArg)
 		}
-		if fileExists == true {
+		if fileExists {
 			// prepared to hash given file with md5, sha1 and sha256
 			parsed.FirstArgIsFile = true
 			return parsed
