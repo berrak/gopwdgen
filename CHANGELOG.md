@@ -1,3 +1,9 @@
+## Release 0.4.0 (2018-02-16)
+
+BUGFIXES:
+
+* Update VERSION
+
 ## Release 0.3.0 (2018-02-16)
 
 BUGFIXES:
