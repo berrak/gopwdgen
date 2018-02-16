@@ -10,6 +10,7 @@ fi
 # VERSION file provides one canocial location
 MAJOR=$(cat < VERSION | cut -f1 -d' ')
 MINOR=$(cat < VERSION | cut -f2 -d' ')
+PATCH=$(cat < VERSION | cut -f3 -d' ')
 
 GITCOMMITS=$(git rev-list HEAD | wc -l 2>/dev/null)
 if [ "$GITCOMMITS" -eq 0 ];then
@@ -17,11 +18,11 @@ echo "Please do 'git init'"
 echo "Commit with: git add .; git commit -m 'some commit message'"
 fi
 
-# Append version information from git
+# Use semantic versioning with information from git
 GIT_HASH=$(git log -n 1 --format="%h")
 GIT_BRANCH=$(git rev-parse --abbrev-ref HEAD | sed 's/[-_.\/]//g')
-DEV_VERSION=${MAJOR}.${MINOR}.${GITCOMMITS}~${GIT_HASH}
-REL_VERSION=${MAJOR}.${MINOR}.${GITCOMMITS}
+DEV_VERSION=${MAJOR}.${MINOR}.${PATCH}+${GIT_HASH}.${GITCOMMITS}
+REL_VERSION=${MAJOR}.${MINOR}.${PATCH}
 
 if [ "$1" != "package" ];then
 	VERSION=$DEV_VERSION

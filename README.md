@@ -1,9 +1,9 @@
 # gopwdgen
 
 [![Build Status](https://travis-ci.org/berrak/gopwdgen.svg?branch=master)](https://travis-ci.org/berrak/gopwdgen)
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat)](./LICENSE)
-[![release](https://img.shields.io/badge/release-v0.1.0-blue.svg)]()
-[![homebrew](https://img.shields.io/badge/homebrew-v0.1.0-orange.svg)]()
+[![license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)(./LICENSE)
+[![release](https://img.shields.io/badge/release-v0.2.0-blue.svg)]()
+[![homebrew](https://img.shields.io/badge/homebrew-v0.2.0-orange.svg)]()
 
 ## Generate random passwords or hashes for automatic script retrieval
 
@@ -88,7 +88,7 @@ export GOPWDGEN_UP
 The latter set to true will force generated scrypt hashes to upper case letters.
 
 ## Referenses and credits
-[(1) github.com/sethvargo](https://github.com/sethvargo/password) Included but modified source to exclude some troublesome symbols.
+[(1) github.com/sethvargo](https://github.com/sethvargo/go-password.git) Included but modified source to exclude some troublesome symbols.
 
 ## License
 This project is under the Apache License. See the LICENSE file for the full license text.
