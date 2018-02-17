@@ -1,6 +1,9 @@
 #!/bin/bash
 set -e
 
+# Binary name
+NAME=gopwdgen
+
 # Ensure git is installed
 GITBIN=$(which git)
 if [ "$GITBIN" == "" ]; then
@@ -68,6 +71,15 @@ if [ "$1" == "package" ]; then
 	package "Mac" "darwin" "amd64"
 	package "Linux" "linux" "amd64"
 	package "FreeBSD" "freebsd" "amd64"
+	exit
+fi
+
+PKG_NAME=${NAME}-${REL_VERSION}
+PKG=${PKG_NAME}.tar.gz
+
+if [ "$1" == "archive" ]; then
+	rm -rf *.tar.gz
+    git archive --output=${PKG} --prefix=${PKG_NAME}/ HEAD
 	exit
 fi
 

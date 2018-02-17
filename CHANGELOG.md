@@ -1,3 +1,14 @@
+## Release Unreleased (2018-02-XX)
+
+BUGFIXES:
+
+
+
+IMPROVEMENTS:
+
+* Add coverage to Travis CI
+* Add make target dist to build source tar archive
+
 ## Release 0.6.0 (2018-02-16)
 
 BUGFIXES:

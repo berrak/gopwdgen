@@ -1,9 +1,10 @@
 # gopwdgen
 
-[![Build Status](https://travis-ci.org/berrak/gopwdgen.svg?branch=master)
+[![Build Status](https://travis-ci.org/berrak/gopwdgen.svg?branch=master)]
+[![Coverage Status](https://coveralls.io/repos/github/berrak/gopwdgen/badge.svg?branch=master)](https://coveralls.io/github/berrak/gopwdgen?branch=master)
 [![license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![release](https://img.shields.io/badge/release-v0.6.0-blue.svg)]()
-[![homebrew](https://img.shields.io/badge/homebrew-v0.6.0-orange.svg)]()
+[![release](https://img.shields.io/badge/release-v0.7.0-blue.svg)]()
+[![homebrew](https://img.shields.io/badge/homebrew-v0.7.0-orange.svg)]()
 
 ## Generate random passwords or hashes for automatic script retrieval
 
@@ -86,6 +87,25 @@ export GOPWDGEN_SALT
 export GOPWDGEN_UP
 ```
 The latter set to true will force generated scrypt hashes to upper case letters.
+
+## Help with development
+
+A make file provides following help:
+
+```bash
+$ make
+[develop and test]---------------------------------
+build --------- build binary
+test ---------- run tests
+coverage ------ run coverage tests
+clean --------- remove build binary
+clean-all ----- removes all build artifacts
+[release]------------------------------------------
+install ------- compile and installs binary to GOPATH/bin
+uninstall ----- uninstalls binary in GOPATH/bin
+dist ---------- creates source tar archive
+release ------- creates archives with compiled binaries for Linux, Mac, Windows & Free BSD
+```
 
 ## Referenses and credits
 [(1) github.com/sethvargo](https://github.com/sethvargo/go-password.git) Included but modified source to exclude some troublesome symbols.
