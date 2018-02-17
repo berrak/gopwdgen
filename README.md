@@ -1,7 +1,6 @@
 # gopwdgen
 
-[![Build Status](https://travis-ci.org/berrak/gopwdgen.svg?branch=master)]
-(https://travis-ci.org/berrak/gopwdgen)
+[![Build Status](https://travis-ci.org/berrak/gopwdgen.svg?branch=master)](https://travis-ci.org/berrak/gopwdgen)
 [![Coverage Status](https://coveralls.io/repos/github/berrak/gopwdgen/badge.svg?branch=master)](https://coveralls.io/github/berrak/gopwdgen?branch=master)
 [![license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![release](https://img.shields.io/badge/release-v0.7.0-blue.svg)]()
